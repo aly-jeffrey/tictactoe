@@ -66,7 +66,7 @@ function App() {
     <div className="App">
       <h1>Tic-Tac-Toe</h1>
       <div className="status">
-        {winner ? (winner === 'Tie' ? 'It\'s a Tie!' : `Winner: ${winner}`) : `Next Player: ${xIsNext ? 'X' : 'O'}`}
+        {winner ? (winner === 'Tie' ? 'Game Over: It\'s a Tie!' : `Game Over: ${winner} Wins!`) : `Next Player: ${xIsNext ? 'X' : 'O'}`}
       </div>
       {error && <div className="error">{error}</div>}
       <div className="board">

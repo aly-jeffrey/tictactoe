@@ -46,7 +46,7 @@ function App() {
 
     for (const [a, b, c] of lines) {
       if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-        return { winner: board[a], line: [a, b, c] }; // Return winner and the winning line
+        return { winner: board[a], line: [a, b, c] };
       }
     }
 
